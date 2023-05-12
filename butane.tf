@@ -5,8 +5,8 @@ variant: fcos
 version: 1.4.0
 storage:
   files:
-    # pkg dependencies to be installed by os-additional-rpms.service
-    - path: /var/lib/os-additional-rpms.list
+    # pkg dependencies to be installed by additional-rpms.service
+    - path: /var/lib/additional-rpms.list
       overwrite: false
       append:
         - inline: |
@@ -406,7 +406,7 @@ systemd:
         Before=zincati.service
         Wants=network-online.target
         After=network-online.target
-        After=os-additional-rpms.service
+        After=additional-rpms.service
         After=install-certbot.service
         ConditionPathExists=/usr/local/bin/harbor-installer.sh
         ConditionPathExists=!/var/lib/%N.done
@@ -431,7 +431,7 @@ module "butane_snippet_install_certbot" {
   count = var.certbot != null ? 1 : 0
 
   source  = "krestomatio/butane-snippets/ct//modules/certbot"
-  version = "0.0.10"
+  version = "0.0.12"
 
   domain       = var.external_fqdn
   http_01_port = var.certbot.http_01_port

@@ -23,7 +23,7 @@ The following are the dependencies to create k3s cluster with this module:
 
 | Name                                                                                                                                 | Source                                          | Version |
 | ------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------- | ------- |
-| <a name="module_butane_snippet_install_certbot"></a> [butane\_snippet\_install\_certbot](#module\_butane\_snippet\_install\_certbot) | krestomatio/butane-snippets/ct//modules/certbot | 0.0.10  |
+| <a name="module_butane_snippet_install_certbot"></a> [butane\_snippet\_install\_certbot](#module\_butane\_snippet\_install\_certbot) | krestomatio/butane-snippets/ct//modules/certbot | 0.0.12  |
 | <a name="module_fcos"></a> [fcos](#module\_fcos)                                                                                     | krestomatio/fcos/libvirt                        | 0.0.11  |
 
 ## Resources
