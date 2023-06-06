@@ -37,7 +37,7 @@ locals {
       # key
       cp -f "$$${source_key_path}" "$$${harbor_key_path}"
       # owner
-      chown $$${harbor_proxy_uid}:$$${harbor_proxy_uid} "$$${harbor_cert_folder_path}" "$$${harbor_cert_path}" "$$${harbor_key_path}"
+      chown $$${harbor_proxy_uid}:$$${harbor_proxy_gid} "$$${harbor_cert_folder_path}" "$$${harbor_cert_path}" "$$${harbor_key_path}"
       # permissions
       chmod 0600 "$$${harbor_cert_path}" "$$${harbor_key_path}"
 
