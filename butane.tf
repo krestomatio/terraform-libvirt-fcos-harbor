@@ -135,7 +135,8 @@ storage:
               %{~endif~}
             %{~endif~}
             %{~if var.storage_service.redirect != null~}
-            redirect: ${var.storage_service.redirect}
+            redirect:
+              disable: ${var.storage_service.redirect ? "false" : "true"}
             %{~endif~}
           %{~endif~}
 
