@@ -24,7 +24,7 @@ The following are the dependencies to create the VM with this module:
 | Name | Source | Version |
 |------|--------|---------|
 | <a name="module_butane_snippet_install_certbot"></a> [butane\_snippet\_install\_certbot](#module\_butane\_snippet\_install\_certbot) | krestomatio/butane-snippets/ct//modules/certbot | 0.0.12 |
-| <a name="module_fcos"></a> [fcos](#module\_fcos) | krestomatio/fcos/libvirt | 0.0.15 |
+| <a name="module_fcos"></a> [fcos](#module\_fcos) | krestomatio/fcos/libvirt | 0.0.24 |
 
 ## Resources
 
