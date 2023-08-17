@@ -20,16 +20,14 @@ variable "external_fqdn" {
 
 variable "admin_password" {
   type        = string
-  description = "Harbor admin password. Default: a random generated pasword"
+  description = "Harbor admin password"
   sensitive   = true
-  default     = null
 }
 
 variable "database_root_password" {
   type        = string
-  description = "Database root password. Default: a random generated pasword"
+  description = "Database root password"
   sensitive   = true
-  default     = null
 }
 
 variable "installer" {
