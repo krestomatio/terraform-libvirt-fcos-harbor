@@ -411,15 +411,15 @@ systemd:
         After=install-certbot.service
         ConditionPathExists=/usr/local/bin/harbor-installer.sh
         ConditionPathExists=!/var/lib/%N.done
-        StartLimitInterval=500
+        StartLimitInterval=30
         StartLimitBurst=3
 
         [Service]
         Type=oneshot
         RemainAfterExit=yes
         Restart=on-failure
-        RestartSec=60
-        TimeoutStartSec=300
+        RestartSec=5
+        TimeoutStartSec=20
         ExecStart=/usr/local/bin/harbor-installer.sh
         ExecStart=/bin/touch /var/lib/%N.done
 
